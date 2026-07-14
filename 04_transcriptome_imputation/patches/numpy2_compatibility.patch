@@ -1,0 +1,39 @@
+--- a/metax/metaxcan/AssociationCalculation.py
++++ b/metax/metaxcan/AssociationCalculation.py
+@@ -55,9 +55,13 @@ def association(gene, context, return_snps=False):
+     #capture context
+     n_snps_in_model, i, cov, snps = context.provide_calculation(gene)
+ 
+-    if logging.getLogger().getEffectiveLevel() < 10:
+-        d_ = numpy.linalg.eig(cov)[0]
+-        if numpy.sum(numpy.less(d_,1e-6)):
+-            logging.info("Gene %s has covariance close to singular", gene)
++    if logging.getLogger().getEffectiveLevel() < 10:
++        # NumPy >=2.0 fix: genes with a single-SNP prediction model reduce
++        # the "covariance matrix" to a zero-dimensional array; the eigenvalue
++        # check below is undefined for that shape and previously crashed the
++        # entire run rather than skipping the diagnostic for that one gene.
++        cov_arr = numpy.asarray(cov)
++        if cov_arr.ndim == 2 and cov_arr.shape[0] == cov_arr.shape[1] and cov_arr.shape[0] > 0:
++            d_ = numpy.linalg.eig(cov_arr)[0]
++            if numpy.sum(numpy.less(d_,1e-6)):
++                logging.info("Gene %s has covariance close to singular", gene)
+ 
+     #some stats
+     snps_used = i[Constants.SNP]
+@@ -75,7 +79,12 @@ def association(gene, context, return_snps=False):
+         i_weight = i[WDBQF.K_WEIGHT]
+         i_zscore = i[Constants.ZSCORE]
+         i_beta = i[Constants.BETA]
+-        sigma_g_2 = float(d(d(i_weight,cov),i_weight))
++        # NumPy >=2.0 fix: `cov` may be a legacy numpy.matrix object (from the
++        # covariance-loading code), whose dot products always return a 2-D
++        # (1x1) matrix rather than a scalar. NumPy >=2.0's float() no longer
++        # silently coerces non-0-d arrays, raising a TypeError here. Coercing
++        # explicitly to ndarray and extracting the single element fixes this
++        # without changing the numeric result for any case that previously
++        # worked.
++        i_weight = numpy.asarray(i[WDBQF.K_WEIGHT])
++        i_zscore = numpy.asarray(i[Constants.ZSCORE])
++        i_beta = numpy.asarray(i[Constants.BETA])
++        sigma_g_2 = float(numpy.asarray(d(d(i_weight, numpy.asarray(cov)), i_weight)).reshape(-1)[0])
