@@ -15,11 +15,10 @@ L1000 Level 5 dataset for small molecules predicted to computationally
 reverse the disease-associated transcriptional signatures, cross-referenced
 against mechanism-of-action annotations.
 
-The accompanying manuscript draft is in [`manuscript/`](manuscript/).
-
 ## Pipeline overview
 
-![Pipeline flowchart](assets/flowchart.png)
+<img width="361" height="509" alt="image" src="https://github.com/user-attachments/assets/307b5f63-3c2b-4ade-89ec-254cc2e1e49d" />
+
 
 ## Repository structure
 
@@ -32,8 +31,6 @@ The accompanying manuscript draft is in [`manuscript/`](manuscript/).
 ├── 05_integrative_analysis/     Cross-tissue ACAT integration + Hallmark GSEA
 ├── 06_drug_repurposing/         CMap L1000 connectivity mapping + MOA enrichment
 ├── 07_visualization/            All figure-generating scripts
-├── manuscript/                  Node.js/docx-js manuscript build script
-├── assets/                      README images
 └── requirements.txt
 ```
 
