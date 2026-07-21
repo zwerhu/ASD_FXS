@@ -9,8 +9,8 @@ meta-analyse population case-control ASD GWAS; (2) test genetic overlap
 between population ASD risk and monozygotic (MZ) twin symptom-discordance
 GWAS; (3) impute tissue-specific gene expression via S-PrediXcan across 49
 GTEx v8 tissues for 8 GWAS traits, including a plasma pQTL for the Fragile X
-mental retardation protein (FMRP); (4) integrate association signal across
-tissues and test Hallmark pathway enrichment; and (5) query the CMap LINCS
+mental retardation protein (FMRP); and integrate association signal across
+tissues and test Hallmark pathway enrichment; and (4) query the CMap LINCS
 L1000 Level 5 dataset for small molecules predicted to computationally
 reverse the disease-associated transcriptional signatures, cross-referenced
 against mechanism-of-action annotations.
