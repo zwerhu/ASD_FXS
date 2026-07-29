@@ -20,10 +20,6 @@ NumPy (>=2.0) environment:
    tissue/GWAS pair with no output file produced and no partial results
    saved.
 
-Both issues are silent, all-or-nothing failures: a run either completes
-normally or produces **no output file at all** (never a partially-corrupted
-one), so any of the 343 tissue x trait runs in this pipeline that completed
-successfully are unaffected by these bugs.
 
 ## How to apply
 
