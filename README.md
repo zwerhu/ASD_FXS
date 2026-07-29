@@ -219,8 +219,7 @@ generalise as cautions for similar integrative genomics pipelines.
 
 ## Citation
 
-If you use this pipeline, please cite the accompanying manuscript (see
-`manuscript/`) and the original data sources listed above.
+If you use this pipeline, please cite the accompanying manuscript (to be posted) and the original data sources listed above.
 
 ## License
 
