@@ -196,7 +196,7 @@ python 06_drug_repurposing/04_drug_disease_gene_tissue_links.py \
   channel blockade show the strongest (nominal, not FDR-significant)
   mechanism-of-action enrichment.
 
-See the manuscript in [`manuscript/`](manuscript/) for full methods, results,
+See the manuscript (coming soon) for full methods, results,
 and discussion, including a detailed account of two methodological
 corrections made during this analysis (a mischaracterised CC-GWAS trait, and
 LD-driven inflation of a naive genetic-overlap test) that we believe
