@@ -5,7 +5,7 @@ nominating candidate repurposable drugs for Fragile X syndrome (FXS) and
 autism spectrum disorder (ASD).
 
 This repository contains the complete analysis pipeline used to: (1)
-meta-analyse population case-control ASD GWAS; (2) test genetic overlap
+meta-analyze population case-control ASD GWAS; (2) test genetic overlap
 between population ASD risk and monozygotic (MZ) twin symptom-discordance
 GWAS; (3) impute tissue-specific gene expression via S-PrediXcan across 49
 GTEx v8 tissues for 8 GWAS traits, including a plasma pQTL for the Fragile X
@@ -198,9 +198,9 @@ python 06_drug_repurposing/04_drug_disease_gene_tissue_links.py \
 
 See the manuscript (coming soon) for full methods, results,
 and discussion, including a detailed account of two methodological
-corrections made during this analysis (a mischaracterised CC-GWAS trait, and
+corrections made during this analysis (a mischaracterized CC-GWAS trait, and
 LD-driven inflation of a naive genetic-overlap test) that we believe
-generalise as cautions for similar integrative genomics pipelines.
+generalize as cautions for similar integrative genomics pipelines.
 
 ## Known limitations
 
