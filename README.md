@@ -30,7 +30,6 @@ against mechanism-of-action annotations.
 ├── 04_transcriptome_imputation/ S-PrediXcan (GTEx v8 MASHR), incl. numpy2 patches
 ├── 05_integrative_analysis/     Cross-tissue ACAT integration + Hallmark GSEA
 ├── 06_drug_repurposing/         CMap L1000 connectivity mapping + MOA enrichment
-├── 07_visualization/            All figure-generating scripts
 └── requirements.txt
 ```
 
