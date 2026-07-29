@@ -178,18 +178,6 @@ python 06_drug_repurposing/04_drug_disease_gene_tissue_links.py \
     --output cmap_drug_disease_gene_tissue.tsv
 ```
 
-### 7. Figures
-
-Each script in `07_visualization/` reads one or more of the outputs above
-and writes a single PNG. See individual `--help` output for options, e.g.:
-
-```bash
-python 07_visualization/plot_manhattan_qq.py \
-    --meta_results meta_groupA_ASD.tsv.gz --output figures/manhattan_qq.png
-
-python 07_visualization/plot_sankey_diagram.py \
-    --links cmap_drug_disease_gene_tissue.tsv --output figures/sankey.png
-```
 
 ## Key findings
 
