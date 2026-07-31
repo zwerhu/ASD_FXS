@@ -209,8 +209,7 @@ generalize as cautions for similar integrative genomics pipelines.
 - The CMap connectivity analysis aggregates signatures to one representative
   profile per compound across all cell lines by default; a neural-lineage
   restricted re-analysis (`--cell_lines NPC NEU` in
-  `01_merge_filter_gctx.py`) is recommended as a follow-up and is supported
-  but was not run to completion in the accompanying manuscript.
+  `01_merge_filter_gctx.py`) is recommended as a follow-up.
 - MOA annotation covers only ~9% of the tested compound library (limited by
   the Broad Repurposing Hub's coverage of named vs. unnamed probe
   compounds), limiting MOA enrichment power.
