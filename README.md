@@ -205,8 +205,7 @@ generalize as cautions for similar integrative genomics pipelines.
 ## Known limitations
 
 - The genetic-overlap analysis in `03_genetic_correlation/` is an LD-pruning
-  proxy, **not** a substitute for LD Score Regression (LDSC); use LDSC with
-  a proper ancestry-matched reference panel when available.
+  proxy, **not** a substitute for LD Score Regression (LDSC).
 - The CMap connectivity analysis aggregates signatures to one representative
   profile per compound across all cell lines by default; a neural-lineage
   restricted re-analysis (`--cell_lines NPC NEU` in
