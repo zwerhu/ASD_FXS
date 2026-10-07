@@ -18,7 +18,8 @@ against mechanism-of-action annotations.
 ## Pipeline overview
 
 
-<img width="500" height="803" alt="image" src="https://github.com/user-attachments/assets/a04e598a-7ffb-491b-af77-175b5f8d609a" />
+<img width="782" height="1309" alt="image" src="https://github.com/user-attachments/assets/9a9c6127-93a7-44d5-87c0-f4aef85373dd" />
+
 
 
 ## Repository structure
@@ -220,7 +221,7 @@ generalize as cautions for similar integrative genomics pipelines.
 
 If you use this pipeline, please cite the accompanying manuscript and the original data sources listed above.
 
-Wen Zhang, Jingqi Yan, Michael DeGiorgio*. Integrative genetic and transcriptomic analysis identifies candidate genes and compounds for Fragile X syndrome and autism spectrum disorder
+Wen Zhang, Jingqi Yan, Michael DeGiorgio*. Integrative genetic and transcriptomic analysis identifies candidate genes and compounds for Fragile X syndrome and autism spectrum disorder.
 doi: https://doi.org/10.64898/2026.10.03.756403
 
 ## License
