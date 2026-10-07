@@ -18,7 +18,7 @@ against mechanism-of-action annotations.
 ## Pipeline overview
 
 
-<img width="782" height="1309" alt="image" src="https://github.com/user-attachments/assets/9a9c6127-93a7-44d5-87c0-f4aef85373dd" />
+<img width="582" height="1009" alt="image" src="https://github.com/user-attachments/assets/9a9c6127-93a7-44d5-87c0-f4aef85373dd" />
 
 
 
