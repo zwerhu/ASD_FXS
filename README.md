@@ -219,7 +219,6 @@ generalize as cautions for similar integrative genomics pipelines.
 
 ## Citation
 
-If you use this pipeline, please cite the accompanying manuscript and the original data sources listed above.
 
 Wen Zhang, Jingqi Yan, Michael DeGiorgio*. Integrative genetic and transcriptomic analysis identifies candidate genes and compounds for Fragile X syndrome and autism spectrum disorder.
 doi: https://doi.org/10.64898/2026.10.03.756403
